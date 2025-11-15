@@ -52,9 +52,9 @@ input_list = [lt_t,spcl,price_t,adults,wkend,park,wk,mkt,amnth,totan,dwkd]
 
 # mke prediction 
 
-prediction = model.predict_proba[input_list][:,1][0]
+prediction = model.predict_proba([input_list])[:,1][0]
 
 # lets show thw probability 
 
 if st.button('probability'):
-    st.success(f'CANCELATION CHANCES {round(prediction,4)*100}')
+    st.success(f'CANCELLATION CHANCES {round(prediction,4)*100}')
