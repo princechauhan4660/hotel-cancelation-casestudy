@@ -45,7 +45,7 @@ park = (lambda x: 0 if x== 'NO' else 1)(st.selectbox('DOES GUEST REQUEST FOR PAR
 
 # LETS TRANFORM THE DATA 
 
-lt_t,price_t = tranfromer.transform([[lt,price]])[0]
+lt_t,price_t = transformer.transform([[lt,price]])[0]
 
 # create input list 
 input_list = [lt_t,spcl,price_t,adults,wkend,park,wk,mkt,amnth.totan,dwkd]
